@@ -1,0 +1,20 @@
+Interpolation binding: Using double curly braces to substitute values like so {{}}
+
+Components: 
+Has a decorator function named @Component that specified 3 metadata properties - css-selector, template url, styles url
+
+
+Two way binding: 
+Using ngModel we can do two way binding, this is used in cases where user edits something on website and the property has to be updated in the component class as well.
+
+Example:     <input [(ngModel)]="hero.name" placeholder="name">
+
+
+Iterating over some list: Use *ngFor syntax
+<li *ngFor="let hero of heroes">
+
+Event binding:
+<li *ngFor="let hero of heroes" (click)="onSelect(hero)">
+
+
+
