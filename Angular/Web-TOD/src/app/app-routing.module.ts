@@ -12,12 +12,17 @@ component: MainPageComponent
 },
 
 {
-  path: 'imos',
+  path: 'dash1',
   component: DashboardComponent
 },
 
 {
-  path: 'redwing',
+  path: 'dash2',
+  component: DashboardComponent
+},
+
+{
+  path: 'dash3',
   component: DashboardComponent
 }
 ];
