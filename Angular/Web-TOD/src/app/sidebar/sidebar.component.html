@@ -2,9 +2,9 @@
   <div class="sidebar_header sidebar_borders"><i class="fas fa-th" style="color:teal"></i> Web T.o.d</div>
   <div class="sidebar_main_item sidebar_borders">
     Dashboards <br> <br>
-    <a [routerLink]="['/dash1']" routerLinkActive="active">Dash1</a>
-    <a [routerLink]="[ '/dash2' ]" routerLinkActive="active">Dash2</a>
-    <a [routerLink]="[ '/dash3' ]" routerLinkActive="active">Dash3</a>
+    <a [routerLink]="['/dash1']" routerLinkActive="active" (click)="loadDashboard($event)">Dash1</a>
+    <a [routerLink]="[ '/dash2' ]" routerLinkActive="active" (click)="loadDashboard($event)">Dash2</a>
+    <a [routerLink]="[ '/dash3' ]" routerLinkActive="active" (click)="loadDashboard($event)">Dash3</a>
 
   </div>
 

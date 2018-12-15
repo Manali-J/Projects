@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationStart } from '@angular/router';
 import { filter } from 'rxjs/operators';
 import {ActivatedRoute} from '@angular/router';
+import {DataService} from '../data.service';
+import { Dashboard } from './Dashboard';
 
 declare var $: any;
 
@@ -12,14 +14,17 @@ declare var $: any;
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private router: Router, private activatedRoute: ActivatedRoute) {}
+  constructor(private dataService: DataService, private router: Router, private activatedRoute: ActivatedRoute) {}
 
+  dash_data: Dashboard[];
 
   ngOnInit() {
     this.doJqueryLoad();
     this.router.events.pipe(filter(event => event instanceof NavigationStart)).subscribe(() => {
+     this.getData();
       this.doJqueryLoad();
   });
+  
   }
 
 
@@ -28,4 +33,10 @@ export class DashboardComponent implements OnInit {
   }
   
   title = "Dashboard View";
+
+  getData()
+  {
+    
+  }
+
 }

@@ -18,3 +18,15 @@ Event binding:
 
 
 
+ng2-smart-table
+npm install ng2-completer --save-dev
+npm install rxjs-compat
+
+
+Material:
+npm install --save @angular/material @angular/cdk @angular/animations
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+ng generate @angular/material:material-table --name=data-table
+

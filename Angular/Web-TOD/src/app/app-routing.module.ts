@@ -3,7 +3,9 @@ import { RouterModule, Routes, Router } from '@angular/router';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {MainPageComponent} from './main-page/main-page.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { Dash1Component } from './dash1/dash1.component';
+import { MaterialComponent } from './material/material.component';
+import { DataTableComponent } from './data-table/data-table.component';
 
 const routes: Routes = [
 {
@@ -13,7 +15,7 @@ component: MainPageComponent
 
 {
   path: 'dash1',
-  component: DashboardComponent
+  component: DataTableComponent
 },
 
 {

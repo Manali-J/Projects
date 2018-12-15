@@ -12,4 +12,8 @@ export class SidebarComponent implements OnInit {
   ngOnInit() {
   }
 
+  loadDashboard(event)
+  {
+    alert(event.target.innerHTML);
+  }
 }
