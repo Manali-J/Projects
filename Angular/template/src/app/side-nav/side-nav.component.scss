@@ -62,6 +62,13 @@
     color:#b7c0cd;
 }
 
+.mat-expansion-panel
+{
+    background: #1d2531;
+    border-left:2px solid #42a5f5;
+    font-family: Quicksand;
+}
+
 .mat-expansion-panel-header
 {
     background: #263544;
@@ -77,6 +84,16 @@
     font-weight: 500;
 }
 
+.mat-expansion-panel:not([class*=mat-elevation-z])
+{
+    box-shadow: none;
+}
 
+.mat-expansion-panel-content
+{
+    font-family: inherit;
+    font-size:13px;
+    color:#b7c0cd;
+}
 
 
