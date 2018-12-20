@@ -6,12 +6,15 @@ import { AppComponent } from './app.component';
 import { DataTableComponent } from './data-table/data-table.component';
 import { MatTableModule, MatPaginatorModule, MatSortModule, MatButtonModule, MatCheckboxModule, MatInputModule } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { DtTableComponent } from './dt-table/dt-table.component';
+import { DataTablesModule } from 'angular-datatables';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    DataTableComponent
+    DataTableComponent,
+    DtTableComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +23,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     MatPaginatorModule,
     MatSortModule,
     BrowserAnimationsModule,
-    MatInputModule
+    MatInputModule,
+    DataTablesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
