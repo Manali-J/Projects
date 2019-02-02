@@ -1,0 +1,22 @@
+html, body {
+padding: 0%;
+margin:0%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 15%;
+    position: fixed;
+    z-index: 1;
+    background-color: #263544;
+    overflow-x: hidden;
+    transition: 0.5s;
+    color:#fff;
+  }
+
+  
+  #main {
+    transition: margin-left .5s;
+    margin-left: 15%;
+    padding: 16px;
+  }
